@@ -1,0 +1,66 @@
+<!doctype html>
+<!--
+Paul Caron
+8-22-2022
+Module 4 Programming Assignment
+
+Start with the following two lines of JavaScript:
+var i = 842;
+document.write(i + i % 3 / 7 - 2 + 7 ** 3);
+Use parentheses to modify the output line to alter the result of 1183.2857142857142 to the following list of outputs.
+341.14285714285717
+1185.4
+842.0011574074074
+113.28571428571433
+343.2
+841.75 
+
+-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="Module_3/site.css" />	
+<title>Paul Caron's CSD360 Landing Page</title>	
+<meta name="Description" content=""/>
+<meta name="Keywords" content="Javascript, Bellevue University"/>
+<meta name="robots" content="nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1>Module 4 Programming Assignment</h1>
+
+	<!-- Do not mind all the different ways I typed it out, I was proving a point to someone and decided to leave it that way -->
+	
+<script>
+	var i = 842;
+	// 1183.2857142857142	
+	// document.write(i + i % 3 / 7 - 2 + 7 ** 3);
+	
+	// 341.14285714285717
+	document.write((i + i) % 3 / 7 - 2 + 7 ** 3);
+	document.write("<br/>");
+
+	// 1185.4
+	document.write(i + i % 3 / (7 - 2) + 7 ** 3, '<br/>');
+
+	// 842.0011574074074 
+	document.write(i + i % 3 / (7 - 2 + 7) ** 3);
+	document.write('<br/>');
+
+	// 113.28571428571433
+	document.write(i + i % 3 / 7 - (2 + 7) ** 3, '<br />');
+
+	// 343.2
+	document.write((i + i) % 3 / (7 - 2) + 7 ** 3);
+	document.write('<br />')
+
+	// 841.75 
+	document.write(i + (i % 3) / (7 - (2 + 7)) ** 3);
+</script>	
+	
+</body>
+</html>
